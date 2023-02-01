@@ -1,0 +1,22 @@
+Function find_walkings requirements:
+    Input: python DataFrame object.
+        Two dimensional data.
+        Axis 0: rows containing  historically sorted data by time_start_local column.
+        Axis 1: columns:
+            time_start_local    - datetime64[ns] .
+            time_end_local      - datetime64[ns] .
+            time_offset         - int16         
+            steps               - int16         
+
+        
+    DataFrame has to be previously cleaned out of the noise data.
+
+    Overall Function description placed in a function docstring.
+
+Output dictionary is written as a byte stream using python "pickle" library 
+to "walkings.json" file to local default folder.
+
+To load dictionary data please use:
+        with open('walkings.json', 'rb') as f:
+            dict_ = pickle.load(f)
+            f.close()
