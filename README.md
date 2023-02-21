@@ -1,4 +1,4 @@
-# Welltory
+# Well_tory
 
 ## Data Analyst vacancy
 [official company site](https://welltory.com/)
